@@ -3,7 +3,7 @@ on: [push]
 name: Build
 
 env:
-  GIT_USER_AUTHOR_NAME:actions
+  GIT_USER_AUTHOR_NAME: actions
 
 jobs:
   build:
@@ -13,5 +13,4 @@ jobs:
       - run: cargo build --release 
       - run: cp -a dist/* docs
       - run: git add docs/ 
-      - run: j
-      - run: git commit -m "adding build for commit {{GITHUB_SHA}}"
+      - run: git commit -m "adding build for commit $GITHUB_SHA"
