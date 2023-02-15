@@ -3,8 +3,7 @@ on: [push]
 name: Build
 
 env:
-  GIT_USER_AUTHOR_NAME=actions
-
+  GIT_USER_AUTHOR_NAME:actions
 
 jobs:
   build:
