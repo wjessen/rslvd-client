@@ -1,3 +1,6 @@
+use yew::prelude::*;
+
+#[function_component]
 fn App() -> Html {
 
     let counter = use_state(|| 0);

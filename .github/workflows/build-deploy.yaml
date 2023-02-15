@@ -1,0 +1,10 @@
+on: [push]
+
+name: Build
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: cargo build --release
+    
