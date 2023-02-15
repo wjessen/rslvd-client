@@ -6,6 +6,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: ls -als
+      - uses: actions/checkout@v3 
       - run: cargo build --release
-    
+
