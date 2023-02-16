@@ -14,6 +14,7 @@ jobs:
       - run: cargo build --release 
       - run: cp -a dist/* docs
       - run: git add docs/ 
+      - run: ls -als
       - run: git status
       - uses: actions-js/push@master
         with:
