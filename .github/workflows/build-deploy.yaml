@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3 
       - uses: jetli/trunk-action@v0.4.0
-      - uses: rustup target add wasm32-unknown-unknown
+      - run: rustup target add wasm32-unknown-unknown
       - run: trunk build --release -d docs
       - uses: actions-js/push@master
         with:
