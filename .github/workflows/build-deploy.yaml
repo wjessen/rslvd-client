@@ -18,3 +18,4 @@ jobs:
       - uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GH_PAT }}
+          branch: master
