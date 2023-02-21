@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0
       - uses: jetli/trunk-action@v0.4.0
       - run: rustup target add wasm32-unknown-unknown
-      - run: trunk build --release -d docs
+      - run: trunk build --public-url rust-client --release -d docs
       - run: git add -f docs/
       - uses: actions-js/push@master
         with:
